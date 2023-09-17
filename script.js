@@ -68,9 +68,9 @@ getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     // Check for winning and losing conditions here
     if (score >= WINNING_SCORE) {
-      return window.location.assign('/results/win.html'); // Redirect to win page
+      return window.location.assign('/win.html'); // Redirect to win page
     } else {
-      return window.location.assign('/results/lose.html'); // Redirect to lose page
+      return window.location.assign('/lose.html'); // Redirect to lose page
     }
   }
 
